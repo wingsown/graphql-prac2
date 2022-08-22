@@ -2,7 +2,7 @@
 exports.Query = {
     hello: () => "Hello!",
     products: (parent, args, {products}) => products,
-    product: (parent, { id }, context) => {
+    product: (parent, { id }, {products}) => {
          return products.find((product) => product.id === id);
     },
     categories: (parent, args, { categories }) => categories,
