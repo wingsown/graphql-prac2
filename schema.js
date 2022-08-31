@@ -60,7 +60,7 @@ exports.typeDefs = gql`
         price: Float!
         onSale: Boolean!
         categoryId: ID!
-    }
+    } 
 
     input AddReviewInput {
         date: String!
